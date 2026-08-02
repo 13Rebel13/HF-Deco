@@ -1,0 +1,11 @@
+{
+  "name": "hf-deco",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "20.x"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.14"
+  }
+}
