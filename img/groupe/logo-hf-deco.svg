@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Logo provisoire HF Déco — à remplacer par le SVG officiel -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 84" role="img" aria-label="HF Déco">
+  <rect x="4" y="8" width="6" height="68" fill="#D60000"/>
+  <text x="24" y="46" font-family="Oswald, Arial, sans-serif" font-weight="700" font-size="44" fill="#ffffff" letter-spacing="2">HF DÉCO</text>
+  <text x="26" y="72" font-family="Inter, Arial, sans-serif" font-weight="500" font-size="15" fill="#a8a8a8" letter-spacing="4">DÉCORATION INTÉRIEURE</text>
+</svg>

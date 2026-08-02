@@ -1,0 +1,34 @@
+{
+  "site": "hf-deco",
+  "parent": {
+    "name": "HectoFlex Customs Sàrl",
+    "url": "https://hectoflex.ch",
+    "vatID": "CHE-387.021.916"
+  },
+  "marques": [
+    {
+      "id": "hectoflex",
+      "nom": "HectoFlex",
+      "url": "https://hectoflex.ch",
+      "logo": "logo-hectoflex.svg"
+    },
+    {
+      "id": "hf-customs",
+      "nom": "HF Customs",
+      "url": "https://www.hfcustoms.ch",
+      "logo": "logo-hf-customs.svg"
+    },
+    {
+      "id": "hf-vitro",
+      "nom": "HF Vitro",
+      "url": "https://www.hfvitro.ch",
+      "logo": "logo-hf-vitro.svg"
+    },
+    {
+      "id": "hf-deco",
+      "nom": "HF Déco",
+      "url": "https://www.hfdeco.ch",
+      "logo": "logo-hf-deco.svg"
+    }
+  ]
+}
