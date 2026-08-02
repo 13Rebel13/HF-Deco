@@ -32,7 +32,12 @@ li{margin-bottom:6px}
 
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.card{background:var(--bk2);border:1px solid var(--brd);border-radius:14px;padding:26px 24px;display:flex;flex-direction:column;gap:10px}
+.card{background:var(--bk2);border:1px solid var(--brd);border-radius:14px;padding:26px 24px;display:flex;flex-direction:column;gap:10px;overflow:hidden}
+.card .thumb{width:calc(100% + 48px);margin:-26px -24px 6px;aspect-ratio:16/9;object-fit:cover;display:block}
+.ph{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;border:1px solid var(--brd);display:block}
+.ph-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}
+.ph-strip .ph{aspect-ratio:4/3}
+@media(max-width:760px){.ph-strip{grid-template-columns:1fr}}
 .card:hover{border-color:rgba(252,197,0,.45)}
 .card .ic{width:44px;height:44px;border-radius:10px;background:rgba(252,197,0,.12);display:flex;align-items:center;justify-content:center;color:var(--or)}
 .card p{font-size:14.5px;margin-bottom:0;flex:1}
