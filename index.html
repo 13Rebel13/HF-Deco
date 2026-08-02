@@ -32,7 +32,7 @@
 <meta name="twitter:description" content="Films adhésifs décoratifs pour meubles, cuisines, portes et murs, tableaux personnalisés. Sans travaux ni poussière.">
 <meta name="twitter:image" content="https://www.hfdeco.ch/img/photos/mur-noyer.webp">
 
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["Organization","LocalBusiness"],"@id":"https://www.hfdeco.ch/#org","name":"HF Déco","legalName":"HectoFlex Customs Sàrl","url":"https://www.hfdeco.ch","logo":"https://www.hfdeco.ch/img/logo.svg","image":"https://www.hfdeco.ch/img/photos/mur-noyer.webp","email":"info@hectoflex.ch","telephone":"+41765630521","vatID":"CHE-387.021.916","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"Chemin des Champs-Courbes 5","postalCode":"1024","addressLocality":"Ecublens","addressRegion":"VD","addressCountry":"CH"},"geo":{"@type":"GeoCoordinates","latitude":46.5286,"longitude":6.5654},"areaServed":["Lausanne","Genève","Fribourg","Neuchâtel","Sion","Yverdon-les-Bains","Montreux","Suisse romande"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"}],"description":"Décoration et rénovation d'intérieur : films adhésifs décoratifs pour meubles, cuisines, portes et murs, tableaux et décoration murale personnalisés.","hasOfferCatalog":{"@type":"OfferCatalog","name":"Prestations HF Déco","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Rénovation de meubles","description":"Meubles et agencements recouverts de films adhésifs imitation bois, marbre ou métal."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Cuisines et plans de travail","description":"Façades, plans de travail et crédences habillés de films haute résistance."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Portes et murs","description":"Portes intérieures et murs d'accent habillés de films décoratifs, sans travaux."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Tableaux et décoration murale","description":"Impressions grand format sur Dibond, finition mate ou brillante."}}]},"parentOrganization":{"@type":"Organization","name":"HectoFlex Customs Sàrl","url":"https://hectoflex.ch","vatID":"CHE-387.021.916"},"sameAs":["https://hectoflex.ch","https://www.hfcustoms.ch","https://www.hfvitro.ch"]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["Organization","LocalBusiness"],"@id":"https://www.hfdeco.ch/#org","name":"HF Déco","legalName":"HectoFlex Customs Sàrl","url":"https://www.hfdeco.ch","logo":"https://www.hfdeco.ch/img/logo.svg","image":"https://www.hfdeco.ch/img/photos/mur-noyer.webp","email":"info@hfdeco.ch","telephone":"+41765630521","vatID":"CHE-387.021.916","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"Chemin des Champs-Courbes 5","postalCode":"1024","addressLocality":"Ecublens","addressRegion":"VD","addressCountry":"CH"},"geo":{"@type":"GeoCoordinates","latitude":46.5286,"longitude":6.5654},"areaServed":["Lausanne","Genève","Fribourg","Neuchâtel","Sion","Yverdon-les-Bains","Montreux","Suisse romande"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"}],"description":"Décoration et rénovation d'intérieur : films adhésifs décoratifs pour meubles, cuisines, portes et murs, tableaux et décoration murale personnalisés.","hasOfferCatalog":{"@type":"OfferCatalog","name":"Prestations HF Déco","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Rénovation de meubles","description":"Meubles et agencements recouverts de films adhésifs imitation bois, marbre ou métal."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Cuisines et plans de travail","description":"Façades, plans de travail et crédences habillés de films haute résistance."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Portes et murs","description":"Portes intérieures et murs d'accent habillés de films décoratifs, sans travaux."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Tableaux et décoration murale","description":"Impressions grand format sur Dibond, finition mate ou brillante."}}]},"parentOrganization":{"@type":"Organization","name":"HectoFlex Customs Sàrl","url":"https://hectoflex.ch","vatID":"CHE-387.021.916"},"sameAs":["https://hectoflex.ch","https://www.hfcustoms.ch","https://www.hfvitro.ch"]}]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -102,12 +102,19 @@ h1,h2,h3,.sec-h,.stat-n{font-family:Oswald,sans-serif}
   pointer-events:none;
 }
 .hero .logo-dim,
+.hero .logo-fill,
 .hero .logo-strike{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
 
 .hero .logo-dim{
   filter:drop-shadow(0 0 40px rgba(255,226,122,.5)) drop-shadow(0 0 100px rgba(252,197,0,.3));
   opacity:0;
   animation:heroLogoDim 16s ease-in-out infinite;
+}
+
+.hero .logo-fill{
+  filter:drop-shadow(0 0 40px rgba(255,226,122,.55)) drop-shadow(0 0 110px rgba(252,197,0,.35));
+  opacity:0;
+  animation:heroLogoFill 16s ease-in-out infinite;
 }
 
 .hero .logo-strike{
@@ -138,13 +145,20 @@ h1,h2,h3,.sec-h,.stat-n{font-family:Oswald,sans-serif}
   animation:heroLogoStrike 16s ease-out infinite;
 }
 
+@keyframes heroLogoFill{
+  0%,9%    {opacity:0}
+  11%      {opacity:1}
+  16%      {opacity:1}
+  20%      {opacity:0}
+  100%     {opacity:0}
+}
 @keyframes heroLogoDim{
   0%,1%    {opacity:0}
   3%,9%    {opacity:.22}
-  11%      {opacity:1}
-  18%      {opacity:1}
-  21%      {opacity:.3}
-  23%,100% {opacity:0}
+  11%,16%  {opacity:.15}
+  20%      {opacity:1}
+  25%      {opacity:1}
+  30%,100% {opacity:0}
 }
 @keyframes heroLogoStrike{
   0%       {--bandY:-20%;opacity:0}
@@ -402,6 +416,7 @@ h1,h2,h3,.sec-h,.stat-n{font-family:Oswald,sans-serif}
 <img class="hero-bg" src="img/photos/mur-noyer.webp" alt="Chambre avec mur de tête de lit habillé d'un film décoratif effet noyer" width="1600" height="1195" decoding="async" fetchpriority="high">
 <div class="logowrap">
   <img class="logo-dim" src="img/logo-outline.svg" alt="HF Déco">
+  <img class="logo-fill" src="img/logo.svg" alt="" aria-hidden="true">
   <img class="logo-strike" src="img/logo-outline.svg" alt="" aria-hidden="true">
 </div>
 <div class="hero-ct w" data-a>
@@ -510,7 +525,7 @@ h1,h2,h3,.sec-h,.stat-n{font-family:Oswald,sans-serif}
     <p class="desc">Devis gratuit sous 24h. Conseil, échantillons réels et pose professionnelle.</p>
     <div class="info-row"><div class="info-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div><div><h4><span class="ft-phone">+41 76 563 05 21</span></h4><p>Lun – Ven · 8h – 18h</p></div></div>
     <div class="info-row"><div class="info-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><h4>Ch. des Champs-Courbes 5</h4><p>1024 Ecublens</p></div></div>
-    <div class="info-row"><div class="info-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><h4>info@hectoflex.ch</h4><p>Réponse sous 24h</p></div></div>
+    <div class="info-row"><div class="info-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><h4>info@hfdeco.ch</h4><p>Réponse sous 24h</p></div></div>
   </div>
   <form class="form" data-a action="/api/contact" method="POST" onsubmit="return submitContact(event)">
     <h3>Demande de devis</h3>
@@ -555,7 +570,7 @@ h1,h2,h3,.sec-h,.stat-n{font-family:Oswald,sans-serif}
     </div>
     <div class="ft-right">
       <div class="ft-title">Où nous trouver</div>
-      <div class="ft-loc">Chemin des Champs-Courbes 5<br>1024 Ecublens, Suisse<br><span class="ft-phone">+41 76 563 05 21</span><br>info@hectoflex.ch</div>
+      <div class="ft-loc">Chemin des Champs-Courbes 5<br>1024 Ecublens, Suisse<br><span class="ft-phone">+41 76 563 05 21</span><br>info@hfdeco.ch</div>
     </div>
   </div><!-- groupe-hf:debut -->
 <div class="ft-groupe" style="margin-top:26px;padding-top:16px;border-top:1px solid rgba(255,255,255,.08);display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px 22px;font-size:12.5px;color:#a8a8a8;text-align:center">

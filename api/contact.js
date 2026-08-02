@@ -104,8 +104,8 @@ export default async function handler(req, res) {
     `;
 
     await transporter.sendMail({
-      from: process.env.MAIL_FROM || smtpUser || 'info@hectoflex.ch',
-      to: process.env.MAIL_TO || 'info@hectoflex.ch',
+      from: process.env.MAIL_FROM || smtpUser || 'info@hfdeco.ch',
+      to: process.env.MAIL_TO || 'info@hfdeco.ch',
       replyTo: Email,
       subject: 'Nouvelle demande de devis — hfdeco.ch',
       html,
