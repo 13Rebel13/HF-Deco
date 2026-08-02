@@ -38,6 +38,13 @@ li{margin-bottom:6px}
 .ph-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}
 .ph-strip .ph{aspect-ratio:4/3}
 @media(max-width:760px){.ph-strip{grid-template-columns:1fr}}
+.ba-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:26px}
+@media(max-width:760px){.ba-grid{grid-template-columns:1fr}}
+.ba{position:relative;overflow:hidden;border-radius:14px;border:1px solid var(--brd);aspect-ratio:4/3;cursor:ew-resize;touch-action:none;user-select:none}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.ba .ba-bar{position:absolute;top:0;bottom:0;width:3px;background:var(--or);z-index:5;box-shadow:0 0 14px rgba(0,0,0,.55);transform:translateX(-50%)}
+.ba .ba-handle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:38px;height:38px;background:var(--or);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#000;box-shadow:0 4px 12px rgba(0,0,0,.4)}
+.ba .ba-tag{position:absolute;top:10px;z-index:4;background:rgba(0,0,0,.65);color:#fff;font-size:12px;font-weight:600;letter-spacing:.04em;padding:4px 12px;border-radius:999px;pointer-events:none}
 .card:hover{border-color:rgba(252,197,0,.45)}
 .card .ic{width:44px;height:44px;border-radius:10px;background:rgba(252,197,0,.12);display:flex;align-items:center;justify-content:center;color:var(--or)}
 .card p{font-size:14.5px;margin-bottom:0;flex:1}
